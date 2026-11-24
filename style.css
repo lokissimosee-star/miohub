@@ -1,0 +1,170 @@
+/* Stili Generali e Vibe Violastra */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0710; /* Nero profondo con accenno viola scuro */
+    color: #e0d5ec;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #b066ff; /* Viola acceso */
+    text-shadow: 0 0 15px rgba(176, 102, 255, 0.4);
+}
+
+header p {
+    color: #9b8ab4;
+}
+
+/* Pagina Login */
+.login-body {
+    justify-content: center;
+}
+
+.login-card {
+    background: #140d20;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #2d1a4a;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(138, 43, 226, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-card h2 {
+    color: #b066ff;
+    margin-bottom: 10px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background: #0b0710;
+    border: 1px solid #3c2363;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.4);
+}
+
+.login-card button:hover {
+    background: linear-gradient(135deg, #9d4edd, #c77dff);
+    box-shadow: 0 5px 20px rgba(157, 78, 221, 0.6);
+}
+
+/* Hub - Slide / Card con spessore */
+.hub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.category-card {
+    background: #140d20;
+    padding: 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #2d1a4a;
+    /* Spessore ed effetto rilievo marcato */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: #9d4edd;
+    box-shadow: 0 15px 35px rgba(123, 44, 191, 0.3), 
+                0 0 15px rgba(157, 78, 221, 0.2);
+}
+
+.card-content h2 {
+    color: #d8b4fe;
+    margin-bottom: 8px;
+}
+
+/* Layout a Colonna per Media */
+.media-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.media-item {
+    background: #140d20;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #2d1a4a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 450px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.media-item p {
+    color: #b8a9c9;
+    font-size: 0.95rem;
+}
+
+/* Navigazione interna */
+.top-nav {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-btn {
+    color: #b066ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    color: #d8b4fe;
+    text-shadow: 0 0 8px rgba(176, 102, 255, 0.5);
+}
